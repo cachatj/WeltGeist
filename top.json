@@ -1,9 +1,10 @@
 {
     "timeline":
     {
-        "headline":"Sociology",
+        "headline":"WeltGeist",
         "type":"default",
-        "text":"The study of human social behavior and its origins, development, organizations, and institutions.",
+        "text":"Knowledge Curation Environment
+        ",
         "startDate":"1945,1,26",
         "date": [
             {
@@ -34,7 +35,7 @@
                         {
                 "startDate":"1939,5,29",
                 "endDate":"1939,5,29",
-                "headline":"Language developement nature AND nurture",
+                "headline":"Language development nature AND nurture",
                 "text":"'The faculty of speech is organically determined and should be called, therefore, instinctive. However, what we speak (the form of speech) is determined solely by our environment' (3).",
                 "asset":
                 {
