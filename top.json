@@ -1,35 +1,112 @@
 {
     "timeline":
     {
-        "headline":"TOP TIMELINE",
+        "headline":"Sociology",
         "type":"default",
-        "text":"People say stuff",
-        "startDate":"2012,1,26",
+        "text":"The study of human social behavior and its origins, development, organizations, and institutions.",
+        "startDate":"1945,1,26",
         "date": [
             {
-                "startDate":"1928,1,1",
-                "endDate":"1928,1,1",
-                "headline":"cognitive framework shaped by culture environment",
-                "text":"'The faculty of speech is organically determined and should be called, therefore, instinctive. However, what we speak (the form of speech) is determined solely by our environment' (3).",
+                "startDate":"1941,10,2",
+                "endDate":"1941,10,2",
+                "headline":"Immanuel Kant",
+                "text":"'Kant's major work, the Critique of Pure Reason (Kritik der reinen Vernunft, 1781),[2] aimed to bring reason together with experience and to move beyond what he took to be failures of traditional philosophy and metaphysics. He hoped to end an age of speculation where objects outside experience were seen to support what he saw as futile theories, while resisting the skepticism of thinkers such as David Hume.",
                 "asset":
                 {
-                    "media":"https://vine.co/v/b55LOA1dgJU",
+                    "media":"http://hplusmagazine.com/wp-content/uploads/kant1.jpg",
                     "credit":"",
                     "caption":"Franz Boas - Anthropology and Modern Life"
                 }
             },
             {
-                "startDate":"2001,1,1",
-                "endDate":"2001,1,1",
-                "headline":"Attending holistically versus analytically: Comparing the context sensitivity of Japanese and Americans.",
-                "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
+                "startDate":"1941,12,1",
+                "endDate":"1941,12,1",
+                "headline":"Peter Robert Saunders",
+                "text":"'Peter Saunders is a social researcher who has worked in the UK (as Professor of Sociology at the the University of Sussex until 1999), and in Australia (Research Manager at the Australian Institute of Family Studies 1999-2000 and Social Research Director at the Centre for Independent Studies, 2001–2008). In 2008 he returned to the UK where he is now working as an independent social research consultant and fiction writer.",
                 "asset":
                 {
-                    "media":"",
+                    "media":"http://en.wikipedia.org/wiki/Peter_Robert_Saunders",
+                    "credit":"",
+                    "caption":"Franz Boas - Anthropology and Modern Life"
+                }
+            },            
+              
+                        {
+                "startDate":"1942,5,29",
+                "endDate":"1942,5,29",
+                "headline":"cognitive framework shaped by culture environment",
+                "text":"'The faculty of speech is organically determined and should be called, therefore, instinctive. However, what we speak (the form of speech) is determined solely by our environment' (3).",
+                "asset":
+                {
+                    "media":"http://link.springer.com/static-content/lookinside/592/art%253A10.1023%252FA%253A1015412224429/000.png",
+                    "credit":"",
+                    "caption":"Franz Boas - Anthropology and Modern Life"
+                }
+            },            {
+                "startDate":"1944,3,5",
+                "endDate":"1944,3,5",
+                "headline":"Functionalists seek to describe the different parts of a society",
+                "text":"Functionalism, as a school of thought in anthropology, emerged in the early twentieth century. Bronislaw Malinowski and A.R. Radcliffe-Brown had the greatest influence on the development of functionalism from their posts in Great Britain. Functionalism was a reaction to the excesses of the evolutionary and diffusionist theories of the nineteenth century and the historicism of the early twentieth (Goldschmidt 1996:510). Two versions of functionalism developed between 1910 and 1930: Malinowski’s biocultural (or psychological) functionalism; and structural-functionalism, the approach advanced by Radcliffe-Brown.",
+                "asset":
+                {
+                    "media":"http://i7.photobucket.com/albums/y296/imomus/more/exactitudes1.jpg",
+                    "credit":"",
+                    "caption":"Franz Boas - Anthropology and Modern Life"
+                }
+            },
+            {
+                "startDate":"1945,7,19",
+                "endDate":"1945,7,19",
+                "headline":"What Is Wrong with Social Theory",
+                "text":"<p>The aim of theory in empirical science is to develop analytical schemes of the empirical world with which the given science is concerned.   </p>",
+                "asset":
+                {
+                    "media":"http://www.biomedcentral.com/content/figures/1472-6963-7-123-1-l.jpg",
                     "credit":"",
                     "caption":"cognitive framework shaped by culture environment"
                 }
             }
+            ,
+            {
+                "startDate":"1947,1,1",
+                "endDate":"1948,1,1",
+                "headline":"LSE pioneered the teaching of sociology",
+                "text":"<p>Edvard Westermarck became Britain's first professor of sociology, closely followed by Leonard Trelawny Hobhouse, when they jointly held the Martin White Chair at LSE from 1907. Both men were pivotal in the establishment and foundation of sociology as an academic discipline and in the refinement of its methodology.  </p>",
+                "asset":
+                {
+                    "media":"http://www.ahva.ubc.ca/EventPhotos/213.jpg",
+                    "credit":"",
+                    "caption":"cognitive framework shaped by culture environment"
+                }
+            }
+            ,
+            {
+                "startDate":"1954,11,11",
+                "endDate":"1954,11,11",
+                "headline":"Frankfurt School, Group of Researchers",
+                "text":"<p> The Institute for Social Research (Institut für Sozialforschung) was founded by Carl Grünberg in 1923 as an adjunct of the University of Frankfurt; it was the first Marxist-oriented research centre affiliated with a major German university. Max Horkheimer took over as director in 1930 and recruited many talented theorists, including T.W. Adorno, Erich Fromm, Herbert Marcuse, and Walter Benjamin.The members of the Frankfurt School tried to develop a theory of society that was based on Marxism and Hegelian philosophy but which also utilized the insights of psychoanalysis, sociology, existential philosophy, and other disciplines. They used basic Marxist concepts to analyze the social relations within capitalist economic systems. This approach, which became known as “critical theory,” yielded influential critiques of large corporations and monopolies, the role of technology, the industrialization of culture, and the decline of the individual within capitalist society. Fascism and authoritarianism were also prominent subjects of study. </p>",
+                "asset":
+                {
+                    "media":"http://dcc.newberry.org/system/artifacts/779/original/Bushnell_Social-Aspects_map-7.jpg",
+                    "credit":"",
+                    "caption":"cognitive framework shaped by culture environment"
+                }
+            }
+             ,
+            {
+                "startDate":"1957,12,11",
+                "endDate":"1954,12,11",
+                "headline":"The Philosophical Discourse of Modernity",
+                "text":"<p> In the first chapter, “Modernity’s Consciousness of Time,” Habermas presents an outline of the “cultural self-understanding of modernity” as it emerged in Europe during the eighteenth and nineteenth centuries, and attempts to retrieve the “historical context of Western rationalism” in which modernity or modernization (more narrowly conceived in terms of social and economic transformation) </p>",
+                "asset":
+                {
+                    "media":"http://upload.wikimedia.org/wikipedia/en/thumb/0/0d/The_Philosophical_Discourse_of_Modernity.jpg/220px-The_Philosophical_Discourse_of_Modernity.jpg",
+                    "credit":"",
+                    "caption":"cognitive framework shaped by culture environment"
+                }
+            }
+
+
         ]
     }
 }
