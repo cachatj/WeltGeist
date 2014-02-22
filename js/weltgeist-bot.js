@@ -4,5 +4,6 @@ createStoryJS({
   height:     '600',
   start_zoom_adjust:  2,
   source:     'bot.json',
-  embed_id:   'visualization'
+  embed_id:   'visualization',
+  css:        'css/timeline-bot.css'
 });
