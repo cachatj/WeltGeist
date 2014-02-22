@@ -7,8 +7,8 @@
         "startDate":"1940,1,26",
         "date": [
             {
-                "startDate":"1939,1,1",
-                "endDate":"1939,1,1",
+                "startDate":"1970,1,1",
+                "endDate":"1970,1,1",
                 "headline":"DNA sequencing with chain-terminating inhibitors",
                 "text":"'The faculty of speech is organically determined and should be called, therefore, instinctive. However, what we speak (the form of speech) is determined solely by our environment' (3).",
                 "asset":
@@ -19,8 +19,8 @@
                 }
             },
             {
-                "startDate":"1941,2,4",
-                "endDate":"1941,2,4",
+                "startDate":"1951,2,4",
+                "endDate":"1951,2,4",
                 "headline":"2',3'-Dideoxy-3' aminonucleoside 5'-triphosphates are the terminators of DNA synthesis catalyzed by DNA polymerases",
                 "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
                 "asset":
@@ -31,6 +31,18 @@
                 }
             }
             ,
+            {
+                "startDate":"2001,2,4",
+                "endDate":"2001,2,4",
+                "headline":"A forkhead-domain gene is mutated in a severe speech and language disorder.",
+                "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":"cognitive framework shaped by culture environment"
+                }
+            },
             {
                 "startDate":"1941,11,11",
                 "endDate":"1941,11,11",
@@ -44,8 +56,8 @@
                 }
             },
             {
-                "startDate":"1943,1,1",
-                "endDate":"1943,1,1",
+                "startDate":"1990,1,1",
+                "endDate":"1990,1,1",
                 "headline":"Deoxyribonucleotide analogs as inhibitors and substrates of DNA polymerases.",
                 "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
                 "asset":
@@ -56,8 +68,8 @@
                 }
             },
             {
-                "startDate":"1944,1,1",
-                "endDate":"1944,1,1",
+                "startDate":"1988,1,1",
+                "endDate":"1988,1,1",
                 "headline":"Rational design of polymerase inhibitors as antiviral drugs.",
                 "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
                 "asset":
@@ -68,8 +80,8 @@
                 }
             },
                         {
-                "startDate":"1945,1,1",
-                "endDate":"1945,1,1",
+                "startDate":"1969,1,1",
+                "endDate":"1969,1,1",
                 "headline":"Attending holistically versus analytically: Comparing the context sensitivity of Japanese and Americans.",
                 "text":"<p>With respect to differences in context, Masuda and Nisbett (2001) reported that Japanese participants were more likely, after viewing pictures of fish swimming in an underwater environment, to recall contextual details than were Americans. They also found that when participants encoded pictures of wildlife against a complex natural background (e.g. a goat on a grassy meadow), Japanese participants’ recognition performance was more negatively affected by background changes than were Americans.  </p>",
                 "asset":
