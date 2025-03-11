@@ -9,11 +9,12 @@ import ReactFlow, {
   useNodesState,
   useEdgesState,
   Connection,
-  BackgroundVariant,
+  BackgroundVariant
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 import useTimelineStore from '../../store/useTimelineStore';
+import { TimelineNode, TimelineEdge as TimelineEdgeType } from '../../types';
 import TimelineEventNode from './TimelineEventNode';
 import TimelineEdge from './TimelineEdge';
 
@@ -40,7 +41,7 @@ const Timeline: React.FC = () => {
 
   // Filter nodes based on visible categories and levels
   const filteredNodes = useMemo(() => {
-    return storeNodes.filter(node => {
+    return storeNodes.filter((node: TimelineNode) => {
       const event = node.data.event;
       return visibleCategories.includes(event.category) && visibleLevels.includes(event.level);
     });
@@ -48,10 +49,10 @@ const Timeline: React.FC = () => {
 
   // Filter edges based on visible nodes
   const filteredEdges = useMemo(() => {
-    const visibleNodeIds = new Set(filteredNodes.map(node => node.id));
-    return storeEdges.filter(edge => 
+    const visibleNodeIds = new Set(filteredNodes.map((node: TimelineNode) => node.id));
+    return storeEdges.filter((edge: TimelineEdgeType) => 
       visibleNodeIds.has(edge.source) && visibleNodeIds.has(edge.target)
-    ).map(edge => ({
+    ).map((edge: TimelineEdgeType) => ({
       ...edge,
       type: 'timeline', // Use our custom edge type
     }));
@@ -88,7 +89,7 @@ const Timeline: React.FC = () => {
 
   // Create a minimap node color function based on category
   const nodeColor = useCallback((node: any) => {
-    const category = categories.find(c => c.id === node.data.event.category);
+    const category = categories.find((c: { id: string }) => c.id === node.data.event.category);
     return category?.color || '#6B7280';
   }, [categories]);
 

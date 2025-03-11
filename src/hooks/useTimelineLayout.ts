@@ -22,7 +22,7 @@ const useTimelineLayout = () => {
 
     // Create category lanes
     const categoryLanes = new Map<string, number>();
-    categories.forEach((category, index) => {
+    categories.forEach((category: { id: string }, index: number) => {
       categoryLanes.set(category.id, index);
     });
 

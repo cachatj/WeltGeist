@@ -366,7 +366,6 @@ const calculateNodePositions = (events: TimelineEvent[]): TimelineNode[] => {
       categoryOffsets[cat.id] = cat.position * 50;
     }
   });
-};
   
   // Parse dates to organize events chronologically
   const timelineStart = new Date('1400-01-01').getTime();
@@ -389,3 +388,104 @@ const calculateNodePositions = (events: TimelineEvent[]): TimelineNode[] => {
       data: { event }
     };
   });
+};
+
+// Create the timeline store using Zustand
+const useTimelineStore = create<TimelineState & {
+  addEdge: (connection: Connection) => void;
+  onNodesChange: (changes: any) => void;
+  onEdgesChange: (changes: any) => void;
+  filterByCategory: (categories: string[]) => void;
+  filterByLevel: (levels: HierarchyLevel[]) => void;
+  resetLayout: () => void;
+  recalculateLayout: () => void;
+}>((set, get) => ({
+  // Initialize with sample data
+  nodes: calculateNodePositions(sampleEvents),
+  edges: sampleEdges,
+  categories: hierarchicalCategories,
+  visibleLevels: ['weltgeist', 'zeitgeist', 'geist', 'biology', 'dna'],
+  visibleCategories: hierarchicalCategories.map(cat => cat.id),
+
+  // Add a new edge
+  addEdge: (connection: Connection) => {
+    set((state) => ({
+      edges: addEdge(
+        {
+          ...connection,
+          data: {
+            relationship: 'correlative' as RelationshipType,
+            strength: 50,
+            polarity: 'neutral' as RelationshipPolarity,
+          },
+        },
+        state.edges
+      ),
+    }));
+  },
+
+  // Handle node changes
+  onNodesChange: (changes: any) => {
+    set((state) => {
+      // Apply changes to nodes
+      const updatedNodes = [...state.nodes];
+      changes.forEach((change: any) => {
+        if (change.type === 'position' && change.position) {
+          const nodeIndex = updatedNodes.findIndex(n => n.id === change.id);
+          if (nodeIndex !== -1) {
+            updatedNodes[nodeIndex] = {
+              ...updatedNodes[nodeIndex],
+              position: change.position
+            };
+          }
+        }
+      });
+      return { nodes: updatedNodes };
+    });
+  },
+
+  // Handle edge changes
+  onEdgesChange: (changes: any) => {
+    set((state) => {
+      // Apply changes to edges
+      const updatedEdges = [...state.edges];
+      changes.forEach((change: any) => {
+        if (change.type === 'remove') {
+          const edgeIndex = updatedEdges.findIndex(e => e.id === change.id);
+          if (edgeIndex !== -1) {
+            updatedEdges.splice(edgeIndex, 1);
+          }
+        }
+      });
+      return { edges: updatedEdges };
+    });
+  },
+
+  // Filter nodes by category
+  filterByCategory: (categories: string[]) => {
+    set({ visibleCategories: categories });
+  },
+
+  // Filter nodes by hierarchy level
+  filterByLevel: (levels: HierarchyLevel[]) => {
+    set({ visibleLevels: levels });
+  },
+  
+  // Reset the layout to the original positions
+  resetLayout: () => {
+    set({
+      nodes: calculateNodePositions(sampleEvents)
+    });
+  },
+  
+  // Recalculate the layout based on current events
+  recalculateLayout: () => {
+    const { nodes } = get();
+    const events = nodes.map(node => node.data.event);
+    set({
+      nodes: calculateNodePositions(events)
+    });
+  }
+}));
+
+export default useTimelineStore;

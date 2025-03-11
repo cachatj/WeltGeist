@@ -15,7 +15,7 @@ const TimelineEventNode: React.FC<TimelineEventNodeProps> = ({ data }) => {
   const { categories } = useTimelineStore();
   
   // Find the category info
-  const category = categories.find(c => c.id === event.category);
+  const category = categories.find((c: { id: string }) => c.id === event.category);
   
   // Format date for display
   const formatDate = (date: Date | string): string => {

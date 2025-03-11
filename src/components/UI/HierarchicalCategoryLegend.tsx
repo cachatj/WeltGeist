@@ -36,7 +36,7 @@ const HierarchicalCategoryLegend: React.FC<HierarchicalCategoryLegendProps> = ({
   // Toggle category visibility
   const toggleCategory = (categoryId: string) => {
     const newVisibleCategories = visibleCategories.includes(categoryId)
-      ? visibleCategories.filter(id => id !== categoryId)
+      ? visibleCategories.filter((id: string) => id !== categoryId)
       : [...visibleCategories, categoryId];
     
     filterByCategory(newVisibleCategories);
@@ -45,7 +45,7 @@ const HierarchicalCategoryLegend: React.FC<HierarchicalCategoryLegendProps> = ({
   // Toggle level visibility
   const toggleLevelVisibility = (level: HierarchyLevel) => {
     const newVisibleLevels = visibleLevels.includes(level)
-      ? visibleLevels.filter(l => l !== level)
+      ? visibleLevels.filter((l: HierarchyLevel) => l !== level)
       : [...visibleLevels, level];
     
     filterByLevel(newVisibleLevels);
@@ -56,8 +56,8 @@ const HierarchicalCategoryLegend: React.FC<HierarchicalCategoryLegendProps> = ({
     const levelCategoryIds = categoriesByLevel[level].map(c => c.id);
     
     const newVisibleCategories = select
-      ? [...new Set([...visibleCategories, ...levelCategoryIds])]
-      : visibleCategories.filter(id => !levelCategoryIds.includes(id));
+      ? Array.from(new Set([...visibleCategories, ...levelCategoryIds]))
+      : visibleCategories.filter((id: string) => !levelCategoryIds.includes(id));
     
     filterByCategory(newVisibleCategories);
   };
