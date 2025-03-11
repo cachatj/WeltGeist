@@ -24,13 +24,11 @@ export interface TimelineNode extends Node {
   };
 }
 
-export interface TimelineEdge extends Edge {
-  data?: {
-    relationship: 'causal' | 'correlative' | 'influential' | 'reference';
-    strength: number; // 0-100
-    description?: string;
-  };
-}
+export type TimelineEdge = Edge<{
+  relationship: 'causal' | 'correlative' | 'influential' | 'reference';
+  strength: number; // 0-100
+  description?: string;
+}>;
 
 export interface TimelineState {
   nodes: TimelineNode[];

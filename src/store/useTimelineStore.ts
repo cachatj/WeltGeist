@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Node, Edge, addEdge, Connection } from 'reactflow';
+import { addEdge, Connection } from 'reactflow';
 import { TimelineState, TimelineEvent, TimelineCategory, TimelineNode, TimelineEdge } from '../types';
 
 const initialCategories: TimelineCategory[] = [
@@ -88,20 +88,31 @@ const useTimelineStore = create<TimelineStore>((set, get) => ({
   
   // Edge operations
   addEdge: (connection) => 
-    set((state) => ({
-      edges: addEdge(
-        { 
-          ...connection, 
-          data: { relationship: 'correlative', strength: 50 } 
-        } as TimelineEdge, 
-        state.edges as Edge[]
-      ) as TimelineEdge[],
-    })),
+    set((state) => {
+      const newEdge = {
+        ...connection,
+        data: { 
+          relationship: 'correlative' as const, 
+          strength: 50 
+        }
+      };
+      return {
+        edges: addEdge(newEdge, state.edges) as TimelineEdge[]
+      };
+    }),
   updateEdge: (edgeId, data) => 
     set((state) => ({
       edges: state.edges.map((edge) => 
         edge.id === edgeId 
-          ? { ...edge, data: { ...edge.data, ...data } } 
+          ? { 
+              ...edge, 
+              data: { 
+                relationship: edge.data?.relationship || 'correlative',
+                strength: edge.data?.strength || 50,
+                ...edge.data,
+                ...data 
+              } 
+            } 
           : edge
       ),
     })),
